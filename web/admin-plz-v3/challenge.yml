@@ -1,0 +1,18 @@
+name: admin-plz-v3
+author: saisree
+description: |-
+  Are these admins ever gonna stop?
+
+  {{link}}
+flag: flag{n0_chAnc3_e0180017a92018917265af44b92b8616}
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 5000
+expose:
+  main:
+    - target: 5000
+      http: admin-plz-v3

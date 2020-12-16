@@ -1,0 +1,20 @@
+name: electric-boogaloo
+author: BrownieInMotion
+description: |-
+  It's not about vaccines or one-to-one functions.
+  {{ link }}
+flag: flag{5h0uld_h4v3_h1r3d_g1nk01d}
+
+provide:
+  - ./index.js
+
+containers:
+  main:
+    build: .
+    ports:
+      - 3000
+
+expose:
+  main:
+    - target: 3000
+      http: electric-boogaloo

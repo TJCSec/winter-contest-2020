@@ -1,0 +1,1 @@
+flag{AES:anti-g1nk0id_encrypti0n_st4nd4rd}

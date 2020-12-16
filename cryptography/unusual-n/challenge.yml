@@ -1,0 +1,8 @@
+name: unusual-n
+author: jpes707
+description: |-
+  Given n, e, and c, find the original message (the plaintext version of m).
+flag:
+  file: ./flag.txt
+provide:
+- ./information.txt

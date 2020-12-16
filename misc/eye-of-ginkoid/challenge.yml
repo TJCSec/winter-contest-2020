@@ -1,0 +1,20 @@
+name: eye-of-ginkoid
+author: 2022dmao
+description: |-
+  Behold the eye of ginkoid!
+
+  `nc {{host}} {{port}}`
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 9999
+
+expose:
+  main:
+    - target: 9999
+      tcp: 30003

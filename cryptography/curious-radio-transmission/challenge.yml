@@ -1,0 +1,26 @@
+name: curious-radio-transmission
+author: 2022dmao
+description: |-
+  What on earth are they sending out?
+
+  `nc {{host}} {{port}}`
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./server.py
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    resources:
+      limits:
+        cpus: '1'
+    ports:
+      - 9999
+
+expose:
+  main:
+    - target: 9999
+      tcp: 30002

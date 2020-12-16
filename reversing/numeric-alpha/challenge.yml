@@ -1,0 +1,10 @@
+name: numeric-alpha
+author: boomo
+description: |-
+  if alpha-numeric is so good why isn't there an alpha-numeric 2??
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./numeric-alpha.py
+  - ./output.txt

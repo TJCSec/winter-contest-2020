@@ -1,0 +1,9 @@
+name: close-primes
+author: dhan0779
+description: |-
+  My friend told me that he was too lazy to pick random primes, so he picked two close ones.
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./close-primes.txt

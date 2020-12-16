@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="bg-light p-5 rounded">
+  <h1>GWT SSO</h1>
+  <p class="lead">Ginkoid Web Tokens are the revolutionary new way to authenticate on the web.</p>
+  <a class="btn btn-lg btn-primary" href="{{ url_for('login') }}" role="button">Login</a>
+</div>
+{% endblock %}

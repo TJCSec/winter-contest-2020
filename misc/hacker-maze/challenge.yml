@@ -1,0 +1,19 @@
+name: hacker-maze
+author: saisree
+description: |-
+  Good luck on the HackerMaze Any% Speedrun!
+  `nc {{host}} {{port}}`
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 9999
+
+expose:
+  main:
+    - target: 9999
+      tcp: 30004

@@ -1,0 +1,9 @@
+{% from "templates.html" import render_field %}
+{% extends "layout.html" %}
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h1>{{ current_user.username }}</h1>
+<hr>
+<p>There isn't much to see here...</p>
+{% endblock %}

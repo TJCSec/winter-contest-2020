@@ -1,0 +1,20 @@
+name: 'electric-boogaloo-2: electric-boogaloo'
+author: BrownieInMotion
+description: |-
+  I heard that you're supposed to hash passwords. Hope that makes this more secure!
+  {{ link }}
+flag: flag{m1lit4ry_gr4d3_encrypti0n<<<mil1tary_grad3_gink01d}
+
+provide:
+  - ./index.js
+
+containers:
+  main:
+    build: .
+    ports:
+      - 3000
+
+expose:
+  main:
+    - target: 3000
+      http: electric-boogaloo-2

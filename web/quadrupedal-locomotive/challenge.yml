@@ -1,0 +1,20 @@
+name: quadrupedal-locomotive
+author: laoweiaustin
+description: |-
+  We've been working on these new robots, and are getting ready to release them to users!
+  You can reserve your own if you have access to the flag! However, we've made these flags really hard to find, and I doubt you'll find it.
+
+  {{link}}
+
+flag: flag{rob0t_txt_inf0_l3ak}
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 80
+expose:
+  main:
+    - target: 80
+      http: quadrupedal-locomotive

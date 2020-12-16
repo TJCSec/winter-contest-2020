@@ -1,0 +1,24 @@
+name: open-source
+author: laoweiaustin
+description: |-
+  I created this website to upload different examples of open source projects.
+  However, I've forgotten my password, and need to get the flag from my dashboard.
+  
+  I can't even tell you how my code works, since I forgot to push to git.
+  
+  My username is "admin".
+
+  {{link}}
+  
+flag: flag{st0p_s3rv1ng_g1t_p1s}
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 3000
+expose:
+  main:
+    - target: 3000
+      http: open-source

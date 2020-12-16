@@ -1,0 +1,17 @@
+{% from "templates.html" import render_field %}
+{% extends "layout.html" %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<form method="POST">
+  <h1>Register</h1>
+  <hr>
+  {{ register_form.csrf_token }}
+  {{ render_field(register_form.username) }}
+  {{ render_field(register_form.password) }}
+  {{ render_field(register_form.confirm_password) }}
+  {{ register_form.submit(class_='btn btn-primary') }}
+  <hr>
+  <a href="{{ url_for('login') }}">Login with an existing account</a>
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+name: big-hash
+author: 2022dmao
+description: |-
+  I heard ginkoid broke SHA512 so I did it a bunch of times, once for each character!
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./output.txt

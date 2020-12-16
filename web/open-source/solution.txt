@@ -1,0 +1,10 @@
+Notice that /.git is served on the website. You can use a tool like GitHacker to download the source of the server. 
+
+If you check then git log, there is a commit called "Whoops removed keys from git". Revert this, and look at .env.
+.env includes "SECRET_KEY", which is used for signing JWT keys.
+
+Login to the website, and get our jwt key from localStorage.
+Put our key into jwt.io, paste in the secret key (from .env) and change the username in the payload to 'admin'.
+Replace the jwt key in our localstorage with the newly generated one, and refresh.
+
+Dashboard should show the flag as a result.

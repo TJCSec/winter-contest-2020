@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Authorize{% endblock %}
+
+{% block content %}
+<div class="bg-light p-5 rounded">
+  <h1>Authorize</h1>
+  <p class="lead">You are about to go to: {{ url }}</p>
+  <a class="btn btn-lg btn-danger" href="{{ url_token }}" role="button">Continue</a>
+</div>
+{% endblock %}

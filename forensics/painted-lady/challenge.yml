@@ -1,0 +1,10 @@
+name: painted-lady
+author: agcdragon
+description: |-
+  A mysterious man, X, made a parody of Mona Lisa. X left 2 hints:
+  "Who am I?" "Behind"
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./mona.jpg

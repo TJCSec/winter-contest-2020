@@ -1,0 +1,10 @@
+name: xor-alpha
+author: boomo
+description: |-
+  why xor something once when you can xor it 26 times?!
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./xor.py
+  - ./output.txt

@@ -1,0 +1,8 @@
+Hint 1: Who am I?
+
+Exiftool shows author field "thisisnotthepassword"
+
+Hint 2: Behind
+
+Binwalk extracts a zip file, enter password
+Exiftool gives flag

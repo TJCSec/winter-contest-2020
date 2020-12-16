@@ -1,0 +1,6 @@
+author: 2022dmao
+description: 'Good luck and have fun! `flag{holiday_ginkoids}`'
+flag: flag{holiday_ginkoids}
+name: sanity-check
+value: 1
+tiebreakEligible: false

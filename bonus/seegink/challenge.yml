@@ -1,0 +1,24 @@
+name: seegink
+author: 2022dmao
+description: |-
+  See gink!
+
+  `nc {{host}} {{port}}`
+flag:
+  file: ./bin/flag.txt
+
+provide:
+  - ./bin/seegink
+  - ./libc-2.29.so
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 9999
+
+expose:
+  main:
+    - target: 9999
+      tcp: 30001

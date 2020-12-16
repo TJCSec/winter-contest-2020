@@ -1,0 +1,4 @@
+challenge.yml
+*.sage
+*.sage.py
+docker-compose.yml

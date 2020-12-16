@@ -1,0 +1,29 @@
+<html class="w-full h-full">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body class="bg-white text-black w-full h-full">
+        <div class="flex items-center h-full p-8">
+            <form class="m-auto w-full md:w-2/3 lg:w-1/2 xl:w-1/4 rounded-xl" id="form-login">
+                <div class="font-extrabold text-3xl">
+                    Login
+                </div>
+                <label class="block text-gray-700 text-sm font-bold my-2" for="username">
+                    Username
+                </label>
+                <input class="bg-gray-400 shadow appearance-none rounded w-full py-3 px-3 mb-3 leading-tight focus:outline-none" id="username" type="text">
+                <label class="block text-gray-700 text-sm font-bold mb-2 mt-0" for="password">
+                    Password
+                </label>
+                <input class="bg-gray-400 shadow appearance-none rounded w-full py-3 px-3 mb-3 leading-tight focus:outline-none" id="password" type="password">
+                <button class="bg-green-800 w-full mt-4 mb-4 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none" type="submit">
+                    Sign in
+                </button>
+                <div class="text-red-500 text-center" id="error"></div>
+            </form>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
